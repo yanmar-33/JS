@@ -7,6 +7,11 @@ class Product {
         this.price = price;
         this.category = category;
     }
+
+//
+describe(){
+    console.log('この商品名は' + this.name + 'です。');
+}
 }
 
 // インスタンス化する
@@ -16,3 +21,7 @@ const coffee = new Product('コーヒー', '1500' , '飲料')
  // インスタンス（オブジェクト）の値を出力する
  console.log(shampoo);
  console.log(coffee);
+
+ //メソッドを呼び出す（実行する）
+ shampoo.describe();
+
